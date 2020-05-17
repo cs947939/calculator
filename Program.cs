@@ -35,6 +35,8 @@ namespace Calculator
     }
     class Program
     {
+        
+
         static void Main(string[] args)
         {
             bool endApp = false;
@@ -46,20 +48,17 @@ namespace Calculator
             {
                 // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
-                Console.WriteLine("\ta - Add");
-                Console.WriteLine("\ts - Subtract");
-                Console.WriteLine("\tm - Multiply");
-                Console.WriteLine("\td - Divide");
+                Console.WriteLine("\t1 - Add is `1");
+                Console.WriteLine("\t2 - Subtract is 2");
+                Console.WriteLine("\t3 - Multiply is 3");
+                Console.WriteLine("\t4 - Divide is 4");
                 Console.Write("Your option? ");
 
                 string op = Console.ReadLine();
-                string divsionn = op;
+                
 
 
-                if (Console.ReadLine() = "d")
-                {
-                }
-                else
+              
                 {
                     Console.WriteLine("how many numbers do you plan to use");
                     string numinfo = Console.ReadLine();
