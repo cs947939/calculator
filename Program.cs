@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 namespace Calculator
 {
     class Calculator
@@ -53,16 +55,22 @@ namespace Calculator
                 Console.WriteLine("\t3 - Multiply is 3");
                 Console.WriteLine("\t4 - Divide is 4");
                 Console.Write("Your option? ");
-
-                string op = Console.ReadLine();
                 
+                string op = Console.ReadLine();
+                bool operation = true;
+                string v = op = "d";
+                if (v)
+                {
+                    operation = false;
 
+                }
+                if (operation == false)
+                {
+                    Console.WriteLine("i see you are doing divsion how many numbers do you want to use");
+                    
+                }
 
               
-                {
-                    Console.WriteLine("how many numbers do you plan to use");
-                    string numinfo = Console.ReadLine();
-                }
                 // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
