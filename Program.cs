@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
-
+using System.Collections.Generic;
 namespace Calculator
 {
     class Calculator
@@ -12,16 +13,19 @@ namespace Calculator
             // Use a switch statement to do the math.
             switch (op)
             {
-                case "a":
+                case "1":
                     result = num1 + num2 + num3 + num4;
                     break;
-                case "s":
+                case "2":
                     result = num1 - num2 - num3 - num4;
                     break;
-                case "m":
+                case "3":
+                    Console.WriteLine("how many numbers?");
+                    var numbers = Console.ReadLine();
+                    Public class Operations :
                     result = num1 * num2;
                     break;
-                case "d":
+                case "4":
                     // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
@@ -56,19 +60,8 @@ namespace Calculator
                 Console.WriteLine("\t4 - Divide is 4");
                 Console.Write("Your option? ");
                 
-                string op = Console.ReadLine();
-                bool operation = true;
-                string v = op = "d";
-                if (v)
-                {
-                    operation = false;
-
-                }
-                if (operation == false)
-                {
-                    Console.WriteLine("i see you are doing divsion how many numbers do you want to use");
-                    
-                }
+                var op = Console.ReadLine();
+                
 
               
                 // Declare variables and set to empty.
