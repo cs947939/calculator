@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Collections.Generic;
 namespace Calculator
 {
     class Calculator
@@ -20,10 +17,7 @@ namespace Calculator
                     result = num1 - num2 - num3 - num4;
                     break;
                 case "3":
-                    Console.WriteLine("how many numbers?");
-                    var numbers = Console.ReadLine();
-                    Public class Operations :
-                    result = num1 * num2;
+                    result = num1 * num2 * num3 * num4;
                     break;
                 case "4":
                     // Ask the user to enter a non-zero divisor.
