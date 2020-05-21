@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
+
+
 namespace Calculator
 {
     class Calculator
@@ -6,12 +9,29 @@ namespace Calculator
         public static double DoOperation(double num1, double num2,double num3, double num4, string op)
         {
             double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
-
+            
             // Use a switch statement to do the math.
             switch (op)
             {
                 case "1":
-                    result = num1 + num2 + num3 + num4;
+                    Console.WriteLine("how many numbers?");
+                    string answer = Console.ReadLine();
+
+                    if (answer == "2")
+                    {
+                        result = num1 + num2;
+                    }
+                    else
+                    {
+                        if(answer == "3")
+                        {
+                            result = num1 + num2 + num3;
+                        }
+                        else
+                        {
+                            result = num1 + num2 + num3 + num4;
+                        }
+                    }
                     break;
                 case "2":
                     result = num1 - num2 - num3 - num4;
@@ -57,7 +77,7 @@ namespace Calculator
                 var op = Console.ReadLine();
                 
 
-              
+
                 // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
