@@ -34,10 +34,44 @@ namespace Calculator
                     }
                     break;
                 case "2":
-                    result = num1 - num2 - num3 - num4;
+                    Console.WriteLine("how many numbers?");
+                    string answer1 = Console.ReadLine();
+
+                    if (answer1 == "2")
+                    {
+                        result = num1 - num2;
+ }
+                    else
+                    {
+                        if (answer1 == "3")
+                        {
+                            result = num1 - num2 - num3;
+                        }
+                        else
+                        {
+                            result = num1 - num2 - num3 - num4;
+                        }
+                    }
                     break;
                 case "3":
-                    result = num1 * num2 * num3 * num4;
+                    Console.WriteLine("how many numbers?");
+                    string answer5 = Console.ReadLine();
+
+                    if (answer5 == "2")
+                    {
+                        result = num1 * num2;
+                    }
+                    else
+                    {
+                        if (answer5 == "3")
+                        {
+                            result = num1 * num2 * num3;
+                        }
+                        else
+                        {
+                            result = num1 * num2 * num3 * num4;
+                        }
+                    }
                     break;
                 case "4":
                     // Ask the user to enter a non-zero divisor.
